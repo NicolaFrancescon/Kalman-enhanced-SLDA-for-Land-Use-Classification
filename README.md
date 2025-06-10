@@ -1,6 +1,6 @@
 # Thesis Repository
 
-This repository contains the tools and resources used for conducting simulations and analyses related to the FMoW dataset. Due to its large size, the FMoW dataset is not included in this repository. Instead, instructions and tools for creating the dataset locally are provided in the `Dataset` folder.
+This repository contains the tools and resources used for conducting simulations and analyses related to the FMoW dataset. Due to its large size, the FMoW-time dataset is not included in this repository. Instead, instructions and tools for creating the dataset locally are provided in the `Dataset` folder.
 
 ---
 
