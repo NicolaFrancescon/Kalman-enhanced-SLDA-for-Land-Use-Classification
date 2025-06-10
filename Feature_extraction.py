@@ -1,6 +1,3 @@
-# Author: Nicola Francescon
-#
-
 import warnings
 warnings.filterwarnings('ignore')
 
