@@ -146,10 +146,11 @@ def print_bal_acc_for_more_functions(metrics_list, labels, sizes, years, directo
     Plot the given metrics over the increasing number of learned samples.
 
     Args:
-        metrics (list of lists): A list of lists where each sublist contains metric values.
-        labels (list): List of labels for each metric.
-        sizes (list): List of cumulative observed samples across the years.
-
+        metrics_list (list of lists of lists): A list of lists where each sublist contains metric values.
+        labels (list of str): List of labels for each metric.
+        sizes (list of int): List of cumulative observed samples across the years.
+        years (list of int): List of years observed in the stream.
+        directory (optional, str): String with the directory where the images should be saved.
     Returns:
 
     """
@@ -180,3 +181,33 @@ def print_bal_acc_for_more_functions(metrics_list, labels, sizes, years, directo
         filename = f"{labels}.eps"
         filepath = os.path.join(directory, filename)
         plt.savefig(filepath, format='eps', dpi=1200)
+
+def compute_areas_under_curves(metrics_list, labels):
+    """
+    Compute the area under the Balanced Accuracy curve for each method.
+
+    Args:
+        metrics_list (list of lists of lists): A list where each item corresponds to a method,
+                                               and contains multiple runs of metric values.
+        labels (list of str): List of labels for each method.
+
+    Returns:
+        dict: A dictionary mapping each method label to its computed area under the curve.
+    """
+    area_dict = {}
+
+    for i, method_metrics in enumerate(metrics_list):
+        min_length = min(len(run) for run in method_metrics)
+        truncated = [run[:min_length-1] for run in method_metrics]
+
+        res_array = np.array(truncated)
+        plot_label = ['Accuracy', 'Balanced accuracy']
+        metrics = pd.DataFrame(res_array, columns=plot_label)
+
+        balanced_acc = metrics['Balanced accuracy']
+        x = np.arange(len(balanced_acc))
+        area = np.trapz(balanced_acc, x)
+
+        area_dict[labels[i]] = area
+
+    return area_dict
