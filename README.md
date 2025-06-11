@@ -27,9 +27,6 @@ For visual representation of the pipeline's results, refer to the `Plot results.
 ### Step 5: Compare Simulations
 Compare the performance of different pipelines in terms of execution time and classification accuracy using the `Comparing results.ipynb` notebook. The required comparison functions are included in the notebook's preamble.
 
-### Step 6: Retrieve Execution Times
-Numerical execution times for various pipelines can be extracted using the `Restore times.py` script.
-
 ## Additional Notes
 
 ### Supporting Files
