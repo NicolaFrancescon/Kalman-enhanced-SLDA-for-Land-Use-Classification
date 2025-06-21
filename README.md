@@ -1,6 +1,6 @@
-# Thesis Repository
+# Kalman-Enhanced Streaming Linear Discriminant Analysis for Land Use Classification in Satellite Imagery
 
-This repository contains the tools and resources used for conducting simulations and analyses related to the FMoW dataset. Due to its large size, the FMoW-time dataset is not included in this repository. Instead, instructions and tools for creating the dataset locally are provided in the `Dataset` folder.
+This repository contains the tools and resources used for conducting simulations and analyses related to the FMoW-time dataset. Due to its large size, the FMoW-time dataset is not included in this repository. Instead, instructions and tools for creating the dataset locally are provided in the `Dataset` folder.
 
 ---
 
