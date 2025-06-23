@@ -10,7 +10,7 @@ A significant challenge in learning from data streams is that they are typically
 
 Concept drift introduces a second major challenge by relaxing the assumption of an identical data distribution over time, an assumption that many traditional Machine Learning models rely on. When the underlying data distribution shifts, static models struggle to maintain accuracy, necessitating the introduction of adaptive solutions that can detect and respond to these changes.
 
-Additionally, the high dimensionality of satellite images, which often contain vast amounts of information spread across multiple channels, must be taken into account. Processing and analyzing such large-scale data in real time is computationally expensive, requiring the use of Convolutional Neural Networks to reduce processing costs without losing critical information.
+Additionally, the high dimensionality of satellite images, which often contain vast amounts of information spread across multiple channels, must be taken into account. Processing and analyzing such large-scale data in real time is computationally expensive, requiring the use of pretrained Convolutional Neural Networks to reduce processing costs without losing critical information.
 
 Finally, achieving a balance between computational efficiency and classification accuracy is critical in streaming environments. High-dimensional data and the need for frequent model updates can increase processing times, which may not be feasible in real-time applications. Optimizing this trade-off between responsiveness and accuracy remains a central challenge.
 
