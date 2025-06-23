@@ -8,8 +8,9 @@ A significant challenge in learning from data streams is that they are typically
 
 **Figure:** Illustration of seasonal variations in satellite images. The left image shows a crop field with lush vegetation, while the right image shows the same field during a dry period.
 
-Additionally, the high dimensionality of satellite images, which often contain vast amounts of information spread across multiple channels, must be taken into account. Processing and analyzing such large-scale data in real time is computationally expensive, requiring the use of dimensionality reduction techniques to reduce processing costs without losing critical information.
-Although dimensionality reduction algorithms are commonly employed to simplify data before classification, selecting the most effective approach is crucial. It requires determining the extent to which dimensionality can be reduced while still preserving the essential features necessary for accurate classification. Developing methods that incorporate data similarity while reducing dimensions is particularly important in maintaining classification quality.
+Concept drift introduces a second major challenge by relaxing the assumption of an identical data distribution over time, an assumption that many traditional Machine Learning models rely on. When the underlying data distribution shifts, static models struggle to maintain accuracy, necessitating the introduction of adaptive solutions that can detect and respond to these changes.
+
+Additionally, the high dimensionality of satellite images, which often contain vast amounts of information spread across multiple channels, must be taken into account. Processing and analyzing such large-scale data in real time is computationally expensive, requiring the use of Convolutional Neural Networks to reduce processing costs without losing critical information.
 
 Finally, achieving a balance between computational efficiency and classification accuracy is critical in streaming environments. High-dimensional data and the need for frequent model updates can increase processing times, which may not be feasible in real-time applications. Optimizing this trade-off between responsiveness and accuracy remains a central challenge.
 
