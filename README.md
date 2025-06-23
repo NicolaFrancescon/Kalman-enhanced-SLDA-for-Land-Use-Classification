@@ -2,8 +2,9 @@
 
 Satellite Image Classification in a streaming context presents several challenges that must be addressed to ensure accuracy, efficiency, and adaptability.
 
-<p align="center"> <img src="Images/various/crop field 1.png" alt="Example of a crop field with lush vegetation" width="45%"> <img src="Images/various/crop field 2.png" alt="The same crop field with dry vegetation" width="45%"> </p>
-Figure: Illustration of seasonal variations in satellite images. The left image shows a crop field with lush vegetation, while the right image shows the same field during a dry period.
+<p align="center"> <img src="Images/various/crop field 1.png" alt="Example of a crop field with lush vegetation" width="30%"> <img src="Images/various/crop field 2.png" alt="The same crop field with dry vegetation" width="30%"> </p>
+
+**Figure:** Illustration of seasonal variations in satellite images. The left image shows a crop field with lush vegetation, while the right image shows the same field during a dry period.
 
 A significant challenge in learning from data streams is that they are typically temporally arranged, with changes in the distribution resulting from the passage of time. In the context of time-ordered image streams, the temporal variation in the data distribution is formally defined as temporal distribution shift. Land-use categories, such as agricultural fields or urban areas, may appear differently over time due to seasonal changes or urbanization, while still representing the same class. These temporal variations can complicate the classification process, requiring models that are capable of adapting to evolving patterns in the data, even when the labels remain static. The figure above illustrates an example of seasonal effects, where two images of the same crop field exhibit contrasting vegetation states.
 
@@ -12,7 +13,7 @@ Although dimensionality reduction algorithms are commonly employed to simplify d
 
 Finally, achieving a balance between computational efficiency and classification accuracy is critical in streaming environments. High-dimensional data and the need for frequent model updates can increase processing times, which may not be feasible in real-time applications. Optimizing this trade-off between responsiveness and accuracy remains a central challenge.
 
-This repository contains the tools and resources used for conducting simulations and analyses related to the FMoW-time dataset, a satellite image dataset containing more than 100'000 samples to be classified into more than 60 categories. Due to its large size, the FMoW-time dataset is not included in this repository. Instead, instructions and tools for creating the dataset locally are provided in the `Dataset` folder.
+This repository contains the tools and resources used for conducting simulations and analyses related to the FMoW-time dataset, a satellite image dataset containing more than 100'000 samples to be classified into over 60 categories. Due to its large size, the FMoW-time dataset is not included in this repository. Instead, instructions and tools for creating the dataset locally are provided in the `Dataset` folder.
 
 ---
 
