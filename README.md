@@ -2,7 +2,7 @@
 
 Satellite Image Classification in a streaming context presents several challenges that must be addressed to ensure accuracy, efficiency, and adaptability.
 
-<p align="center"> <img src="Images/various/crop field rigoglioso.png" alt="Example of a crop field with lush vegetation" width="45%"> <img src="Images/various/crop field secco.png" alt="The same crop field with dry vegetation" width="45%"> </p>
+<p align="center"> <img src="Images/various/crop field 1.png" alt="Example of a crop field with lush vegetation" width="45%"> <img src="Images/various/crop field 2.png" alt="The same crop field with dry vegetation" width="45%"> </p>
 Figure: Illustration of seasonal variations in satellite images. The left image shows a crop field with lush vegetation, while the right image shows the same field during a dry period.
 
 A significant challenge in learning from data streams is that they are typically temporally arranged, with changes in the distribution resulting from the passage of time. In the context of time-ordered image streams, the temporal variation in the data distribution is formally defined as temporal distribution shift. Land-use categories, such as agricultural fields or urban areas, may appear differently over time due to seasonal changes or urbanization, while still representing the same class. These temporal variations can complicate the classification process, requiring models that are capable of adapting to evolving patterns in the data, even when the labels remain static. The figure above illustrates an example of seasonal effects, where two images of the same crop field exhibit contrasting vegetation states.
